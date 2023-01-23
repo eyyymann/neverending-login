@@ -5,7 +5,7 @@ const errorMessage = document.getElementById("errorMessage");
 form.addEventListener("submit", (e) => {
   const Username = username.value;
 
-  if (!Username.match(/[A-Z]+\w{3,11}[0-9!@#$%^&*]/g)) {
+  if (!Username.match(/[A-Z]+\w{3,10}[0-9!@#$%^&*]/g)) {
     e.preventDefault();
     errorMessage.style.color = "red";
     errorMessage.hidden = false;
