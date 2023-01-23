@@ -1,0 +1,66 @@
+body {
+	cursor: crosshair;
+	background: #ABC456;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;	
+}
+
+form {
+	background: rgb(220, 220, 220);
+	padding: 30px;
+	text-align: center;
+	border-radius: 15px;
+	width: 350px;
+}
+
+form input {
+	display: block;
+	background: none;
+	margin: 18px auto;
+	padding: 8px;
+	text-align: center;
+	border: 2px solid #4090db;
+	outline: none;
+	width: 180px;
+	font-size: 22px;
+	border-radius: 10px;
+}
+
+form input[type="submit"] {
+	font-size: 16px;
+	font-weight: 800;
+	background: #4090db;
+	color: black;
+}
+
+form input[type="submit"]:hover {
+	cursor: cell;
+	font-size: 20px;
+	font-weight: 800;
+	background: #40B0db;
+	border: 2px solid #40B0db;
+	color: white;	
+}
+
+p {
+	color: red;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+#console {
+	margin: auto;
+	justify-content: center;
+	height: 50vh;
+	background: black;
+	color: white;
+	text-align: center;
+	border-radius: 15px;
+	width: 600px;
+}
