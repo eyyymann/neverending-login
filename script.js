@@ -5,7 +5,12 @@ const errorMessage = document.getElementById("errorMessage");
 form.addEventListener("submit", (e) => {
   const Username = username.value;
 
-  if (!Username.match(/[A-Z]\w{3,10}[0-9!@#$%^&*]/g)) {
+  if (Username === "") {
+    e.preventDefault();
+    errorMessage.style.color = "orange";
+    errorMessage.hidden = false;
+    errorMessage.innerHTML = "Field Required."  
+  } else if (!Username.match(/[A-Z]\w{3,10}[0-9!@#$%^&*]/g)) {
     e.preventDefault();
     errorMessage.style.color = "red";
     errorMessage.hidden = false;
