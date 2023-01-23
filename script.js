@@ -7,7 +7,7 @@ form.addEventListener("submit", (e) => {
 
   if (Username === "") {
     e.preventDefault();
-    errorMessage.style.color = "orange";
+    errorMessage.style.color = rgb(100,60,20);
     errorMessage.hidden = false;
     errorMessage.innerHTML = "Field Required."  
   } else if (!Username.match(/[A-Z]\w{3,10}[0-9!@#$%^&*]/g)) {
